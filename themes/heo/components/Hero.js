@@ -22,10 +22,10 @@ const Hero = props => {
             <div id="hero" style={{ zIndex: 1 }} className={'animate__animated animate__fadeIn animate__fast recent-post-top rounded-[12px] xl:px-5 recent-top-post-group max-w-[86rem] overflow-x-scroll w-full mx-auto flex-row flex-nowrap flex xl:space-x-3 relative'} >
 
                 {/* 左侧banner组 */}
-                <BannerGroup {...props} />
+                {false && <BannerGroup {...props} />}
 
                 {/* 右侧置顶文章组 */}
-                <TopGroup {...props} />
+                {false && <TopGroup {...props} />}
 
             </div>
         </div>
